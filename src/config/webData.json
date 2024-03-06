@@ -1,0 +1,443 @@
+{
+  "domain": "DriveSync",
+  "shortName": "DriveSync",
+  "baseUrl": "http://localhost:8080",
+  "applicationName": "DriveSync",
+  "title": "DriveSync",
+  "description": "DriveSync's description",
+  "logo": "/assets/icons/driveSync.svg",
+  "keywords": ["DriveSync"],
+  "publisher": "DriveSync",
+  "twitter": {
+    "username": "username",
+    "url": "https://exmple.com",
+    "title": "title",
+    "description": "description"
+  },
+  "organization": {
+    "name": "DriveSync",
+    "url": "url",
+    "logo": "/assets/icons/driveSync.svg"
+  },
+  "seo": {
+    "title": "DriveSync",
+    "description": "DriveSync's description",
+    "keywords": ["DriveSync"],
+    "images": []
+  },
+  "social": [],
+  "authors": [],
+  "xml": "",
+  "landingPageData": {
+    "logo": {
+      "name": "DriveSync",
+      "imgSource": "/assets/icons/driveSync.svg"
+    },
+    "navbar": {
+      "textColor": "#ffffff",
+      "bgColor": "#000000",
+      "menus": [
+        {
+          "id": "nav-home",
+          "name": "Home",
+          "slug": "/#home"
+        }
+      ],
+      "button": {
+        "textColor": "#000000",
+        "bgColor": "#ffffff",
+        "text": "Contact Us",
+        "redirect": "/#home"
+      },
+      "partnersLogo": [
+        {
+          "id": "google-cloud-logo",
+          "logoSrc": "/assets/icons/googleCloudLogo.svg",
+          "redirect": "/#home"
+        }
+      ]
+    },
+    "footer": {
+      "textColor": "#ffffff",
+      "bgColor": "#000000",
+      "menus": [
+        {
+          "id": "footer-terms-of-service",
+          "name": "Terms of Service",
+          "slug": "/docs/terms-of-service"
+        },
+        {
+          "id": "footer-privacy-policy",
+          "name": "Privacy Policy",
+          "slug": "/docs/privacy-policy"
+        }
+      ]
+    },
+    "sectionsController": [
+      {
+        "id": "hero-section",
+        "type": "showcase",
+        "order": 1,
+        "logo": {
+          "bgColor": "#ffffff",
+          "src": "/assets/icons/monday_com.svg",
+          "redirect": "/#home"
+        },
+        "headingText": ["DriveSync - monday.com google", "drive integration"],
+        "subText": "DriveSync seamlessly integrates Monday.com and Google Drive, creating folders for new Monday.com items and automatically copying files to the corresponding folders. This centralizes file management, streamlining workflow and boosting productivity, allowing users to focus on business growth and achieving exceptional results.",
+        "youtubeVideoLink": "https://www.youtube.com/embed/u5frEXNHOGQ?si=VMRG5TbwPQwynh0V",
+        "bottomText": "Your ultimate driving companion with enterprise-level security. Sync devices, optimize routes, and stay safe on the road securely",
+        "securityBadges": [
+          {
+            "id": "security-payment",
+            "src": "/assets/icons/securityPayment.svg"
+          },
+          {
+            "id": "high-security-protection",
+            "src": "/assets/icons/highSecurityProtection.svg"
+          }
+        ],
+        "clients": [
+          {
+            "id": "etsy-logo",
+            "src": "/assets/icons/etsy.svg"
+          },
+          {
+            "id": "newYorkTimes-logo",
+            "src": "/assets/icons/newYorkTimes.svg"
+          },
+          {
+            "id": "logitech-logo",
+            "src": "/assets/icons/logitech.svg"
+          },
+          {
+            "id": "forbes-logo",
+            "src": "/assets/icons/forbes.svg"
+          },
+          {
+            "id": "tencent-logo",
+            "src": "/assets/icons/tencent.svg"
+          },
+          {
+            "id": "stonyBrookUniversity-logo",
+            "src": "/assets/icons/stonyBrookUniversity.svg"
+          }
+        ],
+        "bgGradient": ["#242424", "#000000"],
+        "textColor": "#ffffff",
+        "subTextColor": "#D2D2D5"
+      },
+      {
+        "id": "key-features",
+        "order": 2,
+        "type": "cards",
+        "cardsType": "largeImage",
+        "headingText": "Key Features of DriveSync",
+        "subText": [
+          "Experience enhanced workflow with DriveSync. Automate file management,",
+          "streamline processes, and boost productivity. Sign up now for improved efficiency."
+        ],
+        "cards": [
+          {
+            "number": 1,
+            "isFullWidth": true,
+            "heading": "Automatic Folder Creation",
+            "subText": "DriveSync creates a Google Drive folder for every new item you create in Monday.com.",
+            "imgSource": "/assets/images/automatedFolder.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 2,
+            "isFullWidth": false,
+            "heading": "File Synchronization",
+            "subText": "Any new files added to an item in Monday.com will be automatically copied to the corresponding Google Drive folder.",
+            "imgSource": "/assets/images/fileSync.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 3,
+            "isFullWidth": false,
+            "heading": "Centralized File Management",
+            "subText": "Access all your files in one place, without having to switch between apps.",
+            "imgSource": "/assets/images/centralizedFileManagement.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 4,
+            "isFullWidth": false,
+            "heading": "Time-Saving",
+            "subText": "DriveSync eliminates the need for manual folder creation and file copying, saving you time and increasing your productivity.",
+            "imgSource": "/assets/images/timeSaving.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 5,
+            "isFullWidth": false,
+            "heading": "Seamless Integration",
+            "subText": "Any new files added to an item in Monday.com will be automatically copied to the corresponding Google Drive folder.",
+            "imgSource": "/assets/images/seamlessIntegration.svg",
+            "redirect": "/#home"
+          }
+        ],
+        "bgColor": "#ffffff",
+        "textColor": "#000000",
+        "subTextColor": "#4A4C56",
+        "cardSubTextColor": "#070707",
+        "cardBgColor": "#ffffff",
+        "cardBorderColor": "#D2D2D5"
+      },
+      {
+        "id": "cost-saving-calculator",
+        "order": 3,
+        "type": "calculator",
+        "headingText": "Cost Saving Calculator",
+        "subText": [],
+        "cards": [
+          {
+            "id": "cost",
+            "iconSrc": "/assets/icons/dollarIcon.svg",
+            "title": "Saves Cost"
+          },
+          {
+            "id": "saveHours",
+            "iconSrc": "/assets/icons/timeSavingIcon.svg",
+            "title": "Saves Hour"
+          }
+        ],
+        "steps": [
+          {
+            "fileCountString": "0 - 500",
+            "title": "",
+            "costSaving": "100",
+            "hoursSaving": "1"
+          },
+          {
+            "fileCountString": "501 - 1.000",
+            "title": "",
+            "costSaving": "500",
+            "hoursSaving": "2"
+          },
+          {
+            "fileCountString": "1.001 - 5.000",
+            "title": "",
+            "costSaving": "1000",
+            "hoursSaving": "4"
+          },
+          {
+            "fileCountString": "5.001 - 10.000",
+            "title": "",
+            "costSaving": "5000",
+            "hoursSaving": "6"
+          }
+        ],
+        "defaultSelectedFileCount": 1,
+        "bgColor": "#000000",
+        "textColor": "#ffffff",
+        "subTextColor": "#FFFFFFb0",
+        "cardTextColor": "#ffffff",
+        "cardBgColor": "#ffffff1a",
+        "cardBorderColor": "#d2d2d566"
+      },
+      {
+        "id": "benefits",
+        "order": 4,
+        "type": "cards",
+        "cardsType": "smallIcon",
+        "headingText": "Benefits of DriveSyne",
+        "subText": [
+          "DriveSyne brings unmatched benefits to your driving experience: enhanced safety,",
+          "efficiency, and comfort. With advanced features and intuitive technology,"
+        ],
+        "cards": [
+          {
+            "number": 1,
+            "heading": "Time Saving",
+            "subText": "The idea is to show how much time the user can save with DriveSync. We want to show that if you create 1000 folders and upload 100 files manually it will take 2 hours of your time. So an simple calculator where user can enter number of folders and files and it shows you are saving x hours.",
+            "imgSource": "/assets/icons/timeSaving.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 2,
+            "heading": "Enhanced Team Productivity",
+            "subText": "By automating the sync of files and folders, team members spend less time on file management and more time on activities that drive project success. This automation directly contributes to increased productivity across the board.",
+            "imgSource": "/assets/icons/teamIcon.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 3,
+            "heading": "Reduce Human Errors",
+            "subText": "Automating file sync with DriveSync cuts down on manual mistakes, ensuring files are accurately updated and placed, enhancing workflow reliability.",
+            "imgSource": "/assets/icons/reducedHumanErrorIcon.svg",
+            "redirect": "/#home"
+          }
+        ],
+        "bgColor": "#F6F6F6",
+        "textColor": "#000000",
+        "subTextColor": "#4A4C56",
+        "iconBgColor": "#D2D2D5",
+        "cardSubTextColor": "#4A4C56",
+        "cardBgColor": "#EAEAEA",
+        "cardBorderColor": "#EAEAEA"
+      },
+      {
+        "id": "security-keys",
+        "order": 5,
+        "type": "cards",
+        "cardsType": "withoutBg",
+        "headingText": "Our Security Key",
+        "subText": [
+          "DriveSync prioritizes the security and privacy of your information, providing you with",
+          "peace of mind as you manage your files and collaborate with your team."
+        ],
+        "cards": [
+          {
+            "number": 1,
+            "heading": "Data Encryption",
+            "subText": "DriveSync employs robust encryption protocols to safeguard all data transferred between Monday.com and Google Drive.",
+            "imgSource": "/assets/icons/dataEncryptionIcon.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 2,
+            "heading": "Access Control",
+            "subText": "DriveSync enforces strict access controls, empowering users to manage permissions for file and folder access.",
+            "imgSource": "/assets/icons/accessControlIcon.svg",
+            "redirect": "/#home"
+          },
+          {
+            "number": 3,
+            "heading": "Regular Audits",
+            "subText": "DriveSync conducts regular audits and monitoring of its systems to detect and respond to any potential security threats promptly.",
+            "imgSource": "/assets/icons/regularAuditsIcon.svg",
+            "redirect": "/#home"
+          }
+        ],
+        "bgColor": "#000000",
+        "textColor": "#ffffff",
+        "subTextColor": "#ffffff",
+        "iconBgColor": "#ffffff1a",
+        "iconBorderColor": "#d2d2d566",
+        "cardSubTextColor": "#ffffff"
+      },
+      {
+        "id": "partners",
+        "order": 6,
+        "type": "partners",
+        "headingText": "Our Partner",
+        "subText": "",
+        "partners": [
+          {
+            "id": "partner-googleCloudLogo",
+            "imgSrc": "/assets/icons/googleCloudLogo.svg"
+          },
+          {
+            "id": "partner-monday-com",
+            "imgSrc": "/assets/icons/monday_com_whiteTextIcon.svg"
+          }
+        ],
+        "bgColor": "#111111",
+        "textColor": "#ffffff"
+      },
+      {
+        "id": "testimonial",
+        "order": 6,
+        "type": "testimonial",
+        "miniHeadingText": "DON'T TRUST US. TRUST THEM.",
+        "headingText": "What people say.",
+        "subText": [],
+        "reviews": [
+          {
+            "name": "Testimonial 1",
+            "subText": "User from test",
+            "imgSource": "/assets/images/testimonials/dp.jpeg",
+            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendis velit ut voluptatum nisi id perferendis voluptas est beatae repellat in asperiores perferendis.",
+            "rating": 5
+          },
+          {
+            "name": "Testimonial 2",
+            "subText": "User from test",
+            "imgSource": "/assets/images/testimonials/dp.jpeg",
+            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendis voluptas est beatae repellat in asperiores perferendis.",
+            "rating": 4
+          },
+          {
+            "name": "Testimonial 3",
+            "subText": "User from test",
+            "imgSource": "/assets/images/testimonials/dp.jpeg",
+            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendis.",
+            "rating": 5
+          },
+          {
+            "name": "Testimonial 4",
+            "subText": "User from test",
+            "imgSource": "/assets/images/testimonials/dp.jpeg",
+            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferend voluptas est beatae repellat in asperiores perferendis.",
+            "rating": 3
+          },
+          {
+            "name": "Testimonial 5",
+            "subText": "User from test",
+            "imgSource": "/assets/images/testimonials/dp.jpeg",
+            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendi perferendis.",
+            "rating": 3
+          },
+          {
+            "name": "Testimonial 6",
+            "subText": "User from test",
+            "imgSource": "/assets/images/testimonials/dp.jpeg",
+            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum voluptas est beatae repellat in asperiores perferendis.",
+            "rating": 4
+          }
+        ]
+      },
+      {
+        "id": "form",
+        "order": 7,
+        "type": "form",
+        "headingText": "Interested in working with us?",
+        "subText": "Let's build, launch & grow",
+        "fields": [
+          {
+            "name": "firstName",
+            "labelText": "First Name",
+            "placeholder": "Enter First Name",
+            "type": "text",
+            "isFullWidth": false
+          },
+          {
+            "name": "lastName",
+            "labelText": "Last Name",
+            "placeholder": "Enter Last Name",
+            "type": "text",
+            "isFullWidth": false
+          },
+          {
+            "name": "contactNumber",
+            "labelText": "Contact Number",
+            "placeholder": "Enter Contact Number",
+            "type": "phoneNumber",
+            "isFullWidth": false
+          },
+          {
+            "name": "email",
+            "labelText": "Email Address",
+            "placeholder": "Enter Email Address",
+            "type": "email",
+            "isFullWidth": false
+          },
+          {
+            "name": "message",
+            "labelText": "How can we assist you?",
+            "placeholder": "Type...",
+            "type": "textarea",
+            "isFullWidth": true
+          }
+        ]
+      }
+    ],
+    "themeColor": {
+      "bgGradient": ["#0d71af", "#268ac8"],
+      "shapesGradient": ["#084b74", "#268ac8"]
+    }
+  }
+}
