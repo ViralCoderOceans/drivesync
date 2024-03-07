@@ -12,7 +12,7 @@ export default function Nav() {
         className="fixed inset-x-0 top-0 z-30 w-full h-[70px] md:h-[100px] lg:h-[120px] transition-all flex items-center border-b border-white/50"
         style={{ backgroundColor: data?.landingPageData?.navbar?.bgColor }}
       >
-        <div className="w-full container">
+        <div className="w-full container px-4">
           <div className="flex h-14 items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link href={"/#home"} className="flex items-center gap-2 md:gap-3">
@@ -36,11 +36,12 @@ export default function Nav() {
             <div className="hidden lg:block">
               <div className="hidden items-center space-x-3 lg:flex">
                 {
-                  data?.landingPageData?.navbar?.menus && <>
+                  data?.landingPageData?.navbar?.menus?.length > 0 && <>
                     {data?.landingPageData?.navbar?.menus?.map(({ id, name, slug }: { id: any, name: any, slug: any }) => (
                       <Link
                         key={id}
                         href={slug}
+                        target="_blank"
                         className="z-10 rounded-full px-4 py-1.5 text-sm font-medium capitalize text-white transition-colors ease-out hover:text-gray-200"
                       >
                         {name}
@@ -52,6 +53,7 @@ export default function Nav() {
                   data?.landingPageData?.navbar?.button?.text?.length > 0 &&
                   <Link
                     href={data?.landingPageData?.navbar?.button?.redirect}
+                    target="_blank"
                   >
                     <Button
                       className="h-12 py-2 px-6 text-base"
@@ -74,6 +76,7 @@ export default function Nav() {
                       data?.landingPageData?.navbar?.partnersLogo.map((partner) => (
                         <Link
                           key={partner.id}
+                          target="_blank"
                           href={partner.redirect}
                         >
                           <img

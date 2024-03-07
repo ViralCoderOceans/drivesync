@@ -49,13 +49,14 @@ export default function MobileNav() {
         style={{ listStyle: "none" }}
       >
         {
-          data?.landingPageData?.navbar?.menus?.length > 0 &&
+          data?.landingPageData?.navbar?.mobileNavMenus?.length > 0 &&
           <>
-            {data?.landingPageData?.navbar?.menus?.map(({ id, name, slug }: { id: any, name: any, slug: any }) => (
+            {data?.landingPageData?.navbar?.mobileNavMenus?.map(({ id, name, slug }: { id: any, name: any, slug: any }) => (
               <div key={`mobile-${id}`} className="grid gap-3">
                 <MenuItem>
                   <Link
                     href={slug}
+                    target="_blank"
                     onClick={() => toggleOpen()}
                     className="flex w-full font-semibold capitalize text-white"
                   >
@@ -70,6 +71,7 @@ export default function MobileNav() {
               <MenuItem>
                 <Link
                   href={data?.landingPageData?.navbar?.button?.redirect}
+                  target="_blank"
                   className="w-full"
                 >
                   <Button
@@ -98,7 +100,7 @@ export default function MobileNav() {
 const MenuToggle = ({ toggle }: { toggle: any }) => (
   <button
     onClick={toggle}
-    className="pointer-events-auto absolute right-5 top-6 lg:top-10 z-20"
+    className="pointer-events-auto absolute right-5 top-6 md:top-10 z-20"
   >
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path

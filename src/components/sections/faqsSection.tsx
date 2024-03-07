@@ -79,7 +79,7 @@ const FAQsSection = ({
         }
         <div className="flex w-full mt-6 md:mt-10 lg:mt-[60px] flex-col lg:flex-row gap-0 lg:gap-10">
           <div className="h-fit flex flex-wrap w-full lg:w-1/2">
-            {sortedFAQs.leftSide.map((elm, index) => (
+            {sortedFAQs.leftSide.map((elm) => (
               <div className="w-full" key={`left-${sortedFAQs.leftSide.indexOf(elm)}`}>
                 <FAQsCollapsibleComponent
                   textColor={textColor}
@@ -93,7 +93,7 @@ const FAQsSection = ({
             ))}
           </div>
           <div className="h-fit flex flex-wrap w-full lg:w-1/2">
-            {sortedFAQs.rightSide.map((elm, index) => (
+            {sortedFAQs.rightSide.map((elm) => (
               <div className="w-full" key={`right-${sortedFAQs.rightSide.indexOf(elm)}`}>
                 <FAQsCollapsibleComponent
                   textColor={textColor}
@@ -107,17 +107,20 @@ const FAQsSection = ({
             ))}
           </div>
         </div>
-        <Button
-          className="block lg:hidden mt-2 h-auto py-2.5 px-6 text-lg font-normal"
-          style={{
-            backgroundColor: loadMoreBtnBgColor,
-            color: loadMoreBtnTextColor
-          }}
-          onClick={() => setIsLoadMore(!isLoadMore)}
-          variant="default"
-        >
-          {isLoadMore ? loadMoreBtnText[1] : loadMoreBtnText[0]}
-        </Button>
+        {
+          FAQs.length > 6 &&
+          <Button
+            className="block lg:hidden mt-2 h-auto py-2.5 px-6 text-lg font-normal"
+            style={{
+              backgroundColor: loadMoreBtnBgColor,
+              color: loadMoreBtnTextColor
+            }}
+            onClick={() => setIsLoadMore(!isLoadMore)}
+            variant="default"
+          >
+            {isLoadMore ? loadMoreBtnText[1] : loadMoreBtnText[0]}
+          </Button>
+        }
       </article>
     </section>
   );

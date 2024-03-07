@@ -59,30 +59,30 @@ const CardsSection = ({
             <>
               {
                 cardsType === "largeImage" &&
-                <div className="grid grid-cols-2 gap-4 md:gap-6 lg:gap-10">
+                <div className="lg:w-[85%] grid grid-cols-2 gap-4 lg:gap-6">
                   {
                     cards.map((elm: any) => (
                       <div key={`card-${elm.number}`} className={`col-span-2 ${elm.isFullWidth ? "lg:col-span-2" : "lg:col-span-1"} flex justify-center`}>
                         <Card
-                          className={`w-full flex-col ${elm.isFullWidth ? "lg:flex-row gap-4 md:gap-6 lg:gap-10" : ""} p-4 md:p-5 lg:p-6 w-full flex rounded-[12px] lg:rounded-[24px] shadow-none`}
+                          className={`w-full flex-col ${elm.isFullWidth ? "lg:flex-row gap-4 md:gap-6 lg:gap-10" : ""} p-3 lg:p-4 w-full flex rounded-[12px] lg:rounded-[20px] shadow-none`}
                           style={{ backgroundColor: cardBgColor, borderColor: cardBorderColor }}
                         >
                           <div className={`${elm.isFullWidth ? "lg:order-2 lg:w-1/2 lg:pl-10" : "order-1 pb-4 md:pb-5 lg:pb-6"}`}>
                             <img
-                              className="rounded-[12px] lg:rounded-[24px] object-cover h-auto w-full lg:w-auto md:h-[280px] lg:h-[380px]"
+                              className="rounded-[12px] lg:rounded-[20px] object-cover h-auto w-full lg:w-auto md:h-[220px] lg:h-[320px]"
                               src={elm.imgSource}
                               alt={elm.imgAlt}
                             />
                           </div>
                           <div className={`w-full justify-between ${elm.isFullWidth ? "lg:order-1 lg:justify-center lg:w-1/2" : "order-2"} flex-1 flex flex-col gap-y-3 lg:gap-y-4`}>
                             <h3
-                              className="w-full text-[20px] md:text-[30px] lg:text-[40px] font-semibold"
+                              className="w-full text-[20px] md:text-[24px] lg:text-[32px] font-semibold"
                               style={{ color: textColor }}
                             >
                               {elm.number}. {elm.heading}
                             </h3>
                             <p
-                              className="text-[12px] md:text-[18px] lg:text-[24px] text-[#4A4C56]"
+                              className="text-[12px] md:text-[16px] lg:text-[20px] text-[#4A4C56]"
                               style={{ color: cardSubTextColor }}
                             >
                               {elm.subText}

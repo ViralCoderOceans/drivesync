@@ -85,7 +85,10 @@ export default async function RootLayout({
           <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
         </head>
-        <body className={inter.className}>
+        <body
+          className={inter.className}
+          style={{ backgroundColor: SiteConfig.wholeWebsiteBgColor }}
+        >
           <AnalyticsProvider />
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Toaster />

@@ -39,6 +39,7 @@ const ShowcaseSection = ({
         >
           <Link
             href={logo.redirect}
+            target="_blank"
           >
             <Button
               className="h-auto p-[10px] md:p-[20px] lg:py-[20px] lg:px-[40px] text-base"
@@ -56,7 +57,7 @@ const ShowcaseSection = ({
               />
             </Button>
           </Link>
-          <h1 className="text-[32px] sm:leading-[36.8px] lg:text-[64px] lg:leading-[83.2px] font-semibold">
+          <h1 className="text-[28px] sm:leading-[36px] lg:text-[64px] lg:leading-[83.2px] font-semibold">
             <BreakLine text={headingText} />
           </h1>
           <p
@@ -81,8 +82,8 @@ const ShowcaseSection = ({
                 securityBadges.map((badges: any) => (
                   <div key={badges.id}>
                     <img
-                      height="150px"
-                      width="150px"
+                      height="1024px"
+                      width="1024px"
                       className="w-[74px] h-[74px] lg:w-[150px] lg:h-[150px]"
                       src={badges.src}
                       alt={badges.imgAlt}

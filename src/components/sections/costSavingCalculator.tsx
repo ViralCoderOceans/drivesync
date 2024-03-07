@@ -73,7 +73,7 @@ const CostSavingCalculator = ({
                           src={elm.iconSrc}
                           alt={elm.imgAlt}
                         />
-                        <h4
+                        <h3
                           className="text-[20px] md:text-[30px] lg:text-[40px] font-semibold"
                           style={{ color: textColor }}
                         >
@@ -91,7 +91,7 @@ const CostSavingCalculator = ({
                                 }
                               </>
                           }
-                        </h4>
+                        </h3>
                       </div>
                       <div className="flex-1 flex justify-center gap-y-3 lg:gap-y-4">
                         <p
@@ -123,7 +123,7 @@ const CostSavingCalculator = ({
               <Slider.Range className="absolute bg-[#ffffff]/80 rounded-full h-full" />
             </Slider.Track>
             <Slider.Thumb
-              className="block w-3 h-3 md:w-6 md:h-6 bg-white rounded-full hover:bg-violet3 focus:outline-none border border-[#A5A5AB] md:border-[#07080B] shadow-md md:shadow-none"
+              className="block cursor-pointer w-3 h-3 md:w-6 md:h-6 bg-white rounded-full hover:bg-violet3 focus:outline-none border border-[#A5A5AB] md:border-[#07080B] shadow-md md:shadow-none"
               aria-label="Volume"
             />
           </Slider.Root>

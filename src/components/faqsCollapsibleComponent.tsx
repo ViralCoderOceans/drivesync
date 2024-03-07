@@ -13,15 +13,15 @@ const FAQsCollapsibleComponent = ({ faq, isLoadMore, textColor, accordionBgColor
   const [open, setOpen] = useState(false)
   return (
     <Collapsible
-      className={`w-full rounded-[8px] lg:rounded-[12px] p-4 lg:p-6 border-[0.5px] mb-4 ${!isLoadMore ? faq.number <= 5 ? "block" : "hidden" : "block"} lg:block`}
+      className={`w-full rounded-[8px] lg:rounded-[12px] p-3 lg:p-4 border-[0.5px] mb-4 ${!isLoadMore ? faq.number <= 5 ? "block" : "hidden" : "block"} lg:block`}
       open={open}
       onOpenChange={setOpen}
       style={{ backgroundColor: accordionBgColor, borderColor: open ? activatedAccordionBorderColor : deactivatedAccordionBorderColor }}
     >
       <CollapsibleTrigger className="w-full flex">
-        <div className="w-full flex justify-between item-center gap-2 lg:min-h-[56px]">
+        <div className="w-full flex justify-between item-center gap-2 lg:min-h-[48px]">
           <h3
-            className="font-semibold text-xs md:text-base lg:text-[24px] text-left self-center leading-[16px] lg:leading-[28px]"
+            className="font-semibold text-xs md:text-base lg:text-[20px] text-left self-center leading-[16px] lg:leading-[24px]"
             style={{ color: textColor }}
           >
             {faq.question}

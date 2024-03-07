@@ -36,10 +36,16 @@
     "navbar": {
       "textColor": "#ffffff",
       "bgColor": "#000000",
-      "menus": [
+      "menus": [],
+      "mobileNavMenus": [
         {
-          "id": "nav-home",
-          "name": "Home",
+          "id": "footer-privacy-policy",
+          "name": "Privacy Policy",
+          "slug": "/#home"
+        },
+        {
+          "id": "footer-terms-and-conditions",
+          "name": "Terms & Conditions",
           "slug": "/#home"
         }
       ],
@@ -118,7 +124,7 @@
           "redirect": "/#home"
         },
         "headingText": ["DriveSync - monday.com google", "drive integration"],
-        "subText": "DriveSync seamlessly integrates Monday.com and Google Drive, creating folders for new Monday.com items and automatically copying files to the corresponding folders. This centralizes file management, streamlining workflow and boosting productivity, allowing users to focus on business growth and achieving exceptional results.",
+        "subText": "DriveSync seamlessly integrates monday.com and Google Drive, creating folders for new monday.com items and automatically copying files to the corresponding folders. This centralizes file management, streamlining workflow and boosting productivity, allowing users to focus on business growth and achieving exceptional results.",
         "youtubeVideoLink": "https://www.youtube.com/embed/u5frEXNHOGQ?si=VMRG5TbwPQwynh0V",
         "bottomText": "Your ultimate driving companion with enterprise-level security. Sync devices, optimize routes, and stay safe on the road securely",
         "securityBadges": [
@@ -211,7 +217,7 @@
             "number": 1,
             "isFullWidth": true,
             "heading": "Automatic Folder Creation",
-            "subText": "DriveSync creates a Google Drive folder for every new item you create in Monday.com.",
+            "subText": "DriveSync creates a Google Drive folder for every new item you create in monday.com.",
             "imgSource": "/assets/images/automatedFolder.svg",
             "imgAlt": "Automatic Folder Creation",
             "redirect": "/#home"
@@ -220,7 +226,7 @@
             "number": 2,
             "isFullWidth": false,
             "heading": "File Synchronization",
-            "subText": "Any new files added to an item in Monday.com will be automatically copied to the corresponding Google Drive folder.",
+            "subText": "Any new files added to an item in monday.com will be automatically copied to the corresponding Google Drive folder.",
             "imgSource": "/assets/images/fileSync.svg",
             "imgAlt": "File Synchronization",
             "redirect": "/#home"
@@ -247,7 +253,7 @@
             "number": 5,
             "isFullWidth": false,
             "heading": "Seamless Integration",
-            "subText": "Any new files added to an item in Monday.com will be automatically copied to the corresponding Google Drive folder.",
+            "subText": "Any new files added to an item in monday.com will be automatically copied to the corresponding Google Drive folder.",
             "imgSource": "/assets/images/seamlessIntegration.svg",
             "imgAlt": "Seamless Integration",
             "redirect": "/#home"
@@ -364,7 +370,7 @@
         "type": "faqs",
         "headingText": "Frequently Ask Questions",
         "subText": [
-          "DriveSync uses APIs to connect Monday.com and Google Drive, allowing for seamless",
+          "DriveSync uses APIs to connect monday.com and Google Drive, allowing for seamless",
           "communication between the two platforms."
         ],
         "FAQs": [
@@ -410,7 +416,7 @@
           },
           {
             "number": 9,
-            "question": "How does DriveSync integrate with Monday.com ?",
+            "question": "How does DriveSync integrate with monday.com ?",
             "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
           }
         ],
@@ -438,7 +444,7 @@
           {
             "number": 1,
             "heading": "Data Encryption",
-            "subText": "DriveSync employs robust encryption protocols to safeguard all data transferred between Monday.com and Google Drive.",
+            "subText": "DriveSync employs robust encryption protocols to safeguard all data transferred between monday.com and Google Drive.",
             "imgSource": "/assets/icons/dataEncryptionIcon.svg",
             "imgAlt": "Data Encryption",
             "redirect": "/#home"
