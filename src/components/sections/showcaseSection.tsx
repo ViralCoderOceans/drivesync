@@ -52,6 +52,7 @@ const ShowcaseSection = ({
                 width="150px"
                 className="h-[20px] md:h-[33px]"
                 src={logo.src}
+                alt={logo.imgAlt}
               />
             </Button>
           </Link>
@@ -84,6 +85,7 @@ const ShowcaseSection = ({
                       width="150px"
                       className="w-[74px] h-[74px] lg:w-[150px] lg:h-[150px]"
                       src={badges.src}
+                      alt={badges.imgAlt}
                     />
                   </div>
                 ))
@@ -107,6 +109,7 @@ const ShowcaseSection = ({
                       height="45px"
                       className="h-[26px] lg:h-[45px]"
                       src={client.src}
+                      alt={client.imgAlt}
                     />
                   </div>
                 ))

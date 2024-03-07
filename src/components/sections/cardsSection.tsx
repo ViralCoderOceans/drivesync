@@ -71,6 +71,7 @@ const CardsSection = ({
                             <img
                               className="rounded-[12px] lg:rounded-[24px] object-cover h-auto w-full lg:w-auto md:h-[280px] lg:h-[380px]"
                               src={elm.imgSource}
+                              alt={elm.imgAlt}
                             />
                           </div>
                           <div className={`w-full justify-between ${elm.isFullWidth ? "lg:order-1 lg:justify-center lg:w-1/2" : "order-2"} flex-1 flex flex-col gap-y-3 lg:gap-y-4`}>
@@ -110,6 +111,7 @@ const CardsSection = ({
                             <img
                               className="object-cover h-[24px] md:h-[36px] lg:h-[48px]"
                               src={elm.imgSource}
+                              alt={elm.imgAlt}
                             />
                           </div>
                           <div className="w-full flex-1 flex flex-col gap-y-3 lg:gap-y-4">
@@ -148,6 +150,7 @@ const CardsSection = ({
                             <img
                               className="object-cover h-[24px] md:h-[36px] lg:h-[48px]"
                               src={elm.imgSource}
+                              alt={elm.imgAlt}
                             />
                           </div>
                           <div className="w-full flex-1 flex flex-col gap-y-3 lg:gap-y-4">

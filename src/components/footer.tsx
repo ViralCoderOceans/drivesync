@@ -42,6 +42,7 @@ export default function Footer() {
                       width="24px"
                       className="h-[12px] w-[12px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px]"
                       src={social.iconSrc}
+                      alt={social.alt}
                     />
                   </a>
                 ))

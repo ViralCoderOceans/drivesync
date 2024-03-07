@@ -52,6 +52,7 @@
       "partnersLogo": [
         {
           "id": "google-cloud-logo",
+          "alt": "google-cloud-logo",
           "logoSrc": "/assets/icons/googleCloudLogo.svg",
           "redirect": "/#home"
         }
@@ -63,21 +64,25 @@
       "socialMedia": [
         {
           "id": "facebook",
+          "alt": "facebook",
           "iconSrc": "/assets/icons/social/facebook.svg",
           "redirect": "/#home"
         },
         {
           "id": "twitter",
+          "alt": "twitter",
           "iconSrc": "/assets/icons/social/twitter.svg",
           "redirect": "/#home"
         },
         {
           "id": "instagram",
+          "alt": "instagram",
           "iconSrc": "/assets/icons/social/instagram.svg",
           "redirect": "/#home"
         },
         {
           "id": "pinterest",
+          "alt": "pinterest",
           "iconSrc": "/assets/icons/social/pinterest.svg",
           "redirect": "/#home"
         }
@@ -109,6 +114,7 @@
         "logo": {
           "bgColor": "#ffffff",
           "src": "/assets/icons/monday_com.svg",
+          "imgAlt": "DriveSync",
           "redirect": "/#home"
         },
         "headingText": ["DriveSync - monday.com google", "drive integration"],
@@ -118,57 +124,70 @@
         "securityBadges": [
           {
             "id": "security-payment",
-            "src": "/assets/icons/securityPayment.svg"
+            "src": "/assets/icons/securityPayment.svg",
+            "imgAlt": "security-payment"
           },
           {
             "id": "mondayPartnerCertified",
-            "src": "/assets/icons/mondayPartnerCertifiedLogo.svg"
+            "src": "/assets/icons/mondayPartnerCertifiedLogo.svg",
+            "imgAlt": "security-payment"
           },
           {
             "id": "high-security-protection",
-            "src": "/assets/icons/highSecurityProtection.svg"
+            "src": "/assets/icons/highSecurityProtection.svg",
+            "imgAlt": "security-payment"
           }
         ],
         "clients": [
           {
             "id": "airbus-logo",
-            "src": "/assets/icons/airbus.svg"
+            "src": "/assets/icons/airbus.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "etsy-logo",
-            "src": "/assets/icons/etsy.svg"
+            "src": "/assets/icons/etsy.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "newYorkTimes-logo",
-            "src": "/assets/icons/newYorkTimes.svg"
+            "src": "/assets/icons/newYorkTimes.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "logitech-logo",
-            "src": "/assets/icons/logitech.svg"
+            "src": "/assets/icons/logitech.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "forbes-logo",
-            "src": "/assets/icons/forbes.svg"
+            "src": "/assets/icons/forbes.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "tencent-logo",
-            "src": "/assets/icons/tencent.svg"
+            "src": "/assets/icons/tencent.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "stonyBrookUniversity-logo",
-            "src": "/assets/icons/stonyBrookUniversity.svg"
+            "src": "/assets/icons/stonyBrookUniversity.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "portlandCommunityCollege-logo",
-            "src": "/assets/icons/portlandCommunityCollege.svg"
+            "src": "/assets/icons/portlandCommunityCollege.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "warnerMusic-logo",
-            "src": "/assets/icons/warnerMusic.svg"
+            "src": "/assets/icons/warnerMusic.svg",
+            "imgAlt": "logo"
           },
           {
             "id": "verizonConnect-logo",
-            "src": "/assets/icons/verizonConnect.svg"
+            "src": "/assets/icons/verizonConnect.svg",
+            "imgAlt": "logo"
           }
         ],
         "marqueeSpeed": 35,
@@ -194,6 +213,7 @@
             "heading": "Automatic Folder Creation",
             "subText": "DriveSync creates a Google Drive folder for every new item you create in Monday.com.",
             "imgSource": "/assets/images/automatedFolder.svg",
+            "imgAlt": "Automatic Folder Creation",
             "redirect": "/#home"
           },
           {
@@ -202,6 +222,7 @@
             "heading": "File Synchronization",
             "subText": "Any new files added to an item in Monday.com will be automatically copied to the corresponding Google Drive folder.",
             "imgSource": "/assets/images/fileSync.svg",
+            "imgAlt": "File Synchronization",
             "redirect": "/#home"
           },
           {
@@ -210,6 +231,7 @@
             "heading": "Centralized File Management",
             "subText": "Access all your files in one place, without having to switch between apps.",
             "imgSource": "/assets/images/centralizedFileManagement.svg",
+            "imgAlt": "Centralized File Management",
             "redirect": "/#home"
           },
           {
@@ -218,6 +240,7 @@
             "heading": "Time-Saving",
             "subText": "DriveSync eliminates the need for manual folder creation and file copying, saving you time and increasing your productivity.",
             "imgSource": "/assets/images/timeSaving.svg",
+            "imgAlt": "Time-Saving",
             "redirect": "/#home"
           },
           {
@@ -226,6 +249,7 @@
             "heading": "Seamless Integration",
             "subText": "Any new files added to an item in Monday.com will be automatically copied to the corresponding Google Drive folder.",
             "imgSource": "/assets/images/seamlessIntegration.svg",
+            "imgAlt": "Seamless Integration",
             "redirect": "/#home"
           }
         ],
@@ -246,11 +270,13 @@
           {
             "id": "cost",
             "iconSrc": "/assets/icons/dollarIcon.svg",
+            "imgAlt": "dollarIcon",
             "title": "Saves Cost"
           },
           {
             "id": "saveHours",
             "iconSrc": "/assets/icons/timeSavingIcon.svg",
+            "imgAlt": "timeSavingIcon",
             "title": "Saves Hour"
           }
         ],
@@ -304,6 +330,7 @@
             "heading": "Time Saving",
             "subText": "The idea is to show how much time the user can save with DriveSync. We want to show that if you create 1000 folders and upload 100 files manually it will take 2 hours of your time. So an simple calculator where user can enter number of folders and files and it shows you are saving x hours.",
             "imgSource": "/assets/icons/timeSaving.svg",
+            "imgAlt": "Time Saving",
             "redirect": "/#home"
           },
           {
@@ -311,6 +338,7 @@
             "heading": "Enhanced Team Productivity",
             "subText": "By automating the sync of files and folders, team members spend less time on file management and more time on activities that drive project success. This automation directly contributes to increased productivity across the board.",
             "imgSource": "/assets/icons/teamIcon.svg",
+            "imgAlt": "Enhanced Team Productivity",
             "redirect": "/#home"
           },
           {
@@ -318,6 +346,7 @@
             "heading": "Reduce Human Errors",
             "subText": "Automating file sync with DriveSync cuts down on manual mistakes, ensuring files are accurately updated and placed, enhancing workflow reliability.",
             "imgSource": "/assets/icons/reducedHumanErrorIcon.svg",
+            "imgAlt": "Reduce Human Errors",
             "redirect": "/#home"
           }
         ],
@@ -411,6 +440,7 @@
             "heading": "Data Encryption",
             "subText": "DriveSync employs robust encryption protocols to safeguard all data transferred between Monday.com and Google Drive.",
             "imgSource": "/assets/icons/dataEncryptionIcon.svg",
+            "imgAlt": "Data Encryption",
             "redirect": "/#home"
           },
           {
@@ -418,6 +448,7 @@
             "heading": "Access Control",
             "subText": "DriveSync enforces strict access controls, empowering users to manage permissions for file and folder access.",
             "imgSource": "/assets/icons/accessControlIcon.svg",
+            "imgAlt": "Access Control",
             "redirect": "/#home"
           },
           {
@@ -425,6 +456,7 @@
             "heading": "Regular Audits",
             "subText": "DriveSync conducts regular audits and monitoring of its systems to detect and respond to any potential security threats promptly.",
             "imgSource": "/assets/icons/regularAuditsIcon.svg",
+            "imgAlt": "Regular Audits",
             "redirect": "/#home"
           }
         ],
@@ -444,11 +476,13 @@
         "partners": [
           {
             "id": "partner-googleCloudLogo",
-            "imgSrc": "/assets/icons/googleCloudLogo.svg"
+            "imgSrc": "/assets/icons/googleCloudLogo.svg",
+            "imgAlt": "googleCloudLogo"
           },
           {
             "id": "partner-monday-com",
-            "imgSrc": "/assets/icons/monday_com_whiteTextIcon.svg"
+            "imgSrc": "/assets/icons/monday_com_whiteTextIcon.svg",
+            "imgAlt": "monday-com"
           }
         ],
         "bgColor": "#111111",

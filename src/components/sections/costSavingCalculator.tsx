@@ -71,6 +71,7 @@ const CostSavingCalculator = ({
                         <img
                           className="object-cover h-[16px] lg:h-[38px]"
                           src={elm.iconSrc}
+                          alt={elm.imgAlt}
                         />
                         <h4
                           className="text-[20px] md:text-[30px] lg:text-[40px] font-semibold"

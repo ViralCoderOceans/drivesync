@@ -46,6 +46,7 @@ const PartnersSection = ({ data: { order, headingText, subText, partners, bgColo
                         ? <img
                           className="object-cover h-[44px] md:h-[75px]"
                           src={elm.imgSrc}
+                          alt={elm.imgAlt}
                         />
                         : <h3 className="text-3xl font-bold text-[#0e7dc2]">COMPANY-LOGO</h3>
                     }

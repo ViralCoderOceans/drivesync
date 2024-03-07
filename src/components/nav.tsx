@@ -20,9 +20,9 @@ export default function Nav() {
                   width="64"
                   height="64"
                   className="w-[31px] h-[31px] md:w-[64px] md:h-[64px]"
-                  src={data?.landingPageData?.logo?.imgSource ?? "/assets/images/coderoceans-logo.png"}
-                  alt="Logo"
-                  title="Story Generator's logo"
+                  src={data?.landingPageData?.logo?.imgSource ?? "/assets/icons/driveSync.svg"}
+                  alt={data?.shortName}
+                  title={`${data?.shortName}'s logo`}
                   loading="eager"
                 />
                 <h2
@@ -81,6 +81,7 @@ export default function Nav() {
                             width="150px"
                             className="h-[50px]"
                             src={partner.logoSrc}
+                            alt={partner.alt}
                           />
                         </Link>
                       ))
