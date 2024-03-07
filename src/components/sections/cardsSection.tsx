@@ -3,7 +3,24 @@ import BreakLine from "@/components/breakLine";
 import { Card } from "../ui/card";
 import { cn } from "@/libs/utils";
 
-const CardsSection = ({ data: { order, headingText, subText, cards, bgColor, textColor, subTextColor, cardSubTextColor, cardBgColor, cardBorderColor, cardsType, iconBgColor, iconBorderColor } }: { data: any }) => {
+const CardsSection = ({
+  data: {
+    order,
+    headingText,
+    subText,
+    cards,
+    bgColor,
+    textColor,
+    subTextColor,
+    cardSubTextColor,
+    cardBgColor,
+    cardBorderColor,
+    cardsType,
+    iconBgColor,
+    iconBorderColor
+  } }: {
+    data: any
+  }) => {
   return (
     <section
       style={{ backgroundColor: bgColor }}

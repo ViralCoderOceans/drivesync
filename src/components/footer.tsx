@@ -2,126 +2,84 @@
 
 import Link from "next/link"
 
-import MaxWidthWrapper from "@/components/maxWidthWrapper"
-import { usePathname } from "next/navigation"
 import data from "../config/webData.json"
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
 
-interface IItem {
-  name: string
-  href: string
-}
-
-const navigation: {
-  [key: string]: { name: string; href: string }[]
-} = {
-  product: [
-    // { name: "Pricing", href: "/pricing" },
-    // { name: "Help Center", href: "/help" },
-  ],
-  company: [
-    { name: "Blogs", href: "/blogs" },
-    // { name: "About", href: "/about" },
-  ],
-  tools: [],
-  legal: [
-    { name: "Privacy Policy", href: "/docs/privacy-policy" },
-    { name: "Terms Of Services", href: "/docs/terms-of-service" },
-  ],
-}
-
 export default function Footer() {
-  const pathname = usePathname()
-
-  if (pathname === "/login" || pathname === "/register") return null
-
-  const IItemList = (props: { title: string; items: IItem[] }) => {
-    const { title, items } = props
-    if (!items.length) return <></>
-    return (
-      <div>
-        <h3 className="text-sm font-light text-muted-foreground">{title}</h3>
-        <ul role="list" className="mt-4 space-y-4">
-          {items.map((item) => (
-            <li key={item.name}>
-              <Link
-                href={item.href}
-                className="text-sm text-foreground hover:text-muted-foreground transition-colors"
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    )
-  }
-
   return (
-    <footer className="border-t border-border bg-background py-8 backdrop-blur-lg">
-      <MaxWidthWrapper className="pt-10">
-        <div className="xl:grid xl:grid-cols-5 xl:gap-8">
-          <div className="space-y-8 xl:col-span-2">
+    <footer
+      style={{
+        backgroundColor: data.landingPageData.footer.bgColor,
+        color: data.landingPageData.footer.textColor
+      }}
+    >
+      <div className="container px-4 max-w-[1320px] pt-[60px] pb-[30px] lg:pb-[60px]">
+        <div className="flex justify-between items-center gap-8">
+          <div className="space-y-[12px] md:space-y-[20px] lg:space-y-[30px]">
             <Link href="/" className="flex gap-x-2 items-center">
               <span className="sr-only">{`${data?.shortName} logo`}</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
+                className="h-8 md:h-12 lg:h-16"
                 src={data?.logo}
-                style={{
-                  height: "60px",
-                }}
                 alt={data?.title}
               />
-              <h2 className="text-xl font-semibold md:text-2xl md:font-bold">{data?.shortName}</h2>
+              <h2 className="text-base font-semibold md:text-2xl md:font-bold">{data?.shortName}</h2>
             </Link>
-            <p className="max-w-xs text-sm text-foreground">
-              {data?.seo.description}
-            </p>
-            <div className="flex items-center space-x-2">
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="group rounded-md p-2 transition-colors border border-transparent hover:border-border"
-              >
-                <span className="sr-only">Twitter</span>
-                <TwitterLogoIcon className="h-5 w-5 " />
-              </a>
-              <div className="h-8 border-l border-muted-foreground" />
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="group rounded-md p-2 transition-colors border border-transparent hover:border-border"
-              >
-                <span className="sr-only">Github</span>
-                <GitHubLogoIcon className="h-5 w-5" />
-              </a>
-              <div className="h-8 border-l border-muted-foreground" />
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="group rounded-md p-2 transition-colors border border-transparent hover:border-border"
-              >
-                <span className="sr-only">LinkedIn</span>
-                <LinkedInLogoIcon className="h-5 w-5" />
-              </a>
+            <div className="flex items-center gap-3 lg:gap-4">
+              {
+                data.landingPageData.footer.socialMedia.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.redirect}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full p-1.5 bg-[#EEE4F5]/20 flex justify-center items-center"
+                  >
+                    <span className="sr-only">{social.id}</span>
+                    <img
+                      height="24px"
+                      width="24px"
+                      className="h-[12px] w-[12px] md:h-[18px] md:w-[18px] lg:h-[24px] lg:w-[24px]"
+                      src={social.iconSrc}
+                    />
+                  </a>
+                ))
+              }
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 xl:col-span-3 xl:mt-0">
-            <IItemList title="Product" items={navigation.product} />
-            <IItemList title="Company" items={navigation.company} />
-            <IItemList title="Tools" items={navigation.tools} />
-            <IItemList title="Legal" items={navigation.legal} />
+          <div className="flex justify-end">
+            <div className="space-y-[12px] md:space-y-[20px] lg:space-y-[30px]">
+              <h2 className="text-base font-semibold md:text-2xl md:font-bold">Powered by</h2>
+              <Link href="/" target="_blank" className="flex gap-x-2 items-center">
+                <span className="sr-only">{`${data.landingPageData.footer.powerBy.logo} logo`}</span>
+                <img
+                  className="h-6 lg:h-8"
+                  src={data.landingPageData.footer.powerBy.logo}
+                  alt={data.landingPageData.footer.powerBy.companyName}
+                />
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-border pt-8 sm:mt-10 lg:mt-12">
-          <p className="text-sm leading-5 w-full text-center">
-            © {new Date().getFullYear()} {data?.organization?.name}. All rights
+        <div className="mt-6 lg:mt-9 border-t border-[#E9E9EA]/50 pt-6 lg:pt-9 flex justify-between items-center gap-2">
+          <p className={`text-[10px] lg:text-base font-normal ${!(data.landingPageData.footer.menus.length > 0) && "w-full text-center"}`}>
+            © {new Date().getFullYear()} {data?.organization?.name}. {data.landingPageData.footer.copyRightText}
           </p>
+          {
+            data.landingPageData.footer.menus.length > 0 &&
+            <div className="flex flex-wrap justify-end items-center gap-3 lg:gap-6">
+              {
+                data.landingPageData.footer.menus.map((menu) => (
+                  <Link key={menu.id} href={menu.slug} target="_blank" className="text-[10px] lg:text-base font-normal">
+                    {menu.name}
+                  </Link>
+                ))
+              }
+            </div>
+          }
         </div>
-      </MaxWidthWrapper>
+      </div>
     </footer>
   )
 }

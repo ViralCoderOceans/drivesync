@@ -1,14 +1,38 @@
 "use client";
 
-import React, { useMemo } from "react";
-import CollapsibleComponent from "../collapsibleComponent";
+import React, { useMemo, useState } from "react";
+import FAQsCollapsibleComponent from "../faqsCollapsibleComponent";
 import Link from "next/link";
+import { cn } from "@/libs/utils";
+import BreakLine from "../breakLine";
+import { Button } from "@/components/ui/button";
 
-const FAQsSection = ({ data: { headingText, subText, shinyText, FAQs } }: { data: any }) => {
+const FAQsSection = ({
+  data: {
+    order,
+    headingText,
+    subText,
+    shinyText,
+    FAQs,
+    bgColor,
+    textColor,
+    subTextColor,
+    accordionBgColor,
+    activatedAccordionBorderColor,
+    deactivatedAccordionBorderColor,
+    loadMoreBtnText,
+    loadMoreBtnBgColor,
+    loadMoreBtnTextColor
+  }
+}: {
+  data: any
+}) => {
+  const [isLoadMore, setIsLoadMore] = useState(false)
+
   const sortedFAQs = useMemo(() => {
     let leftSide = [] as any[]
     let rightSide = [] as any[]
-    FAQs.map((elm : any, index : any) => {
+    FAQs.map((elm: any, index: any) => {
       if ((index + 1) % 2 === 0) {
         rightSide.push(elm)
       } else {
@@ -22,33 +46,80 @@ const FAQsSection = ({ data: { headingText, subText, shinyText, FAQs } }: { data
   }, [FAQs]);
 
   return (
-    <article className="flex items-center flex-col w-full gap-5">
-      <h2 className="text-2xl sm:text-3xl text-center font-extrabold text-neutral">
-        {headingText ?? "FAQs"}
-      </h2>
-      <p className="text-neutral text-sm text-center sm:text-base max-w-[550px] ">
-        {subText ?? ""}
-        <Link href={shinyText?.redirect ?? '/#home'}  className="ml-1.5 font-semibold animate-text cursor-pointer text-transparent bg-clip-text bg-[length:250%_100%] bg-[linear-gradient(110deg,#1e293b,45%,#e2e8f0,55%,#1e293b)] opacity-90">
-          {shinyText?.text ?? "reach out"}
-        </Link>
-      </p>
-      <div className="w-full mt-10 md:mt-16 flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10">
-        <div className="h-fit flex flex-wrap gap-y-6 w-full lg:w-1/2">
-          {sortedFAQs.leftSide.map((elm) => (
-            <div className="w-full" key={`left-${sortedFAQs.leftSide.indexOf(elm)}`}>
-              <CollapsibleComponent faq={elm} />
-            </div>
-          ))}
+    <section
+      style={{ backgroundColor: bgColor }}
+    >
+      <article
+        className={cn("container px-4 max-w-[1320px] py-[60px] md:py-[100px] lg:py-[120px] flex flex-col items-center justify-center", {
+          "lg:pt-[8vw]": order === 1
+        })}
+      >
+        <h2
+          className="text-center text-[32px] md:text-[45px] lg:text-6xl font-semibold text-neutral mb-5"
+          style={{ color: textColor }}
+        >
+          <BreakLine text={headingText} />
+        </h2>
+        {
+          subText?.length > 0 &&
+          <>
+            <p
+              className="sm:hidden text-neutral text-xs text-center lg:text-base lg:leading-[25.6px]"
+              style={{ color: subTextColor }}
+            >
+              {subText.join(' ') ?? ''}
+            </p>
+            <p
+              className="hidden sm:block text-neutral text-xs text-center lg:text-base lg:leading-[25.6px]"
+              style={{ color: subTextColor }}
+            >
+              <BreakLine text={subText} />
+            </p>
+          </>
+        }
+        <div className="flex w-full mt-6 md:mt-10 lg:mt-[60px] flex-col lg:flex-row gap-0 lg:gap-10">
+          <div className="h-fit flex flex-wrap w-full lg:w-1/2">
+            {sortedFAQs.leftSide.map((elm, index) => (
+              <div className="w-full" key={`left-${sortedFAQs.leftSide.indexOf(elm)}`}>
+                <FAQsCollapsibleComponent
+                  textColor={textColor}
+                  accordionBgColor={accordionBgColor}
+                  activatedAccordionBorderColor={activatedAccordionBorderColor}
+                  deactivatedAccordionBorderColor={deactivatedAccordionBorderColor}
+                  faq={elm}
+                  isLoadMore={isLoadMore}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="h-fit flex flex-wrap w-full lg:w-1/2">
+            {sortedFAQs.rightSide.map((elm, index) => (
+              <div className="w-full" key={`right-${sortedFAQs.rightSide.indexOf(elm)}`}>
+                <FAQsCollapsibleComponent
+                  textColor={textColor}
+                  accordionBgColor={accordionBgColor}
+                  activatedAccordionBorderColor={activatedAccordionBorderColor}
+                  deactivatedAccordionBorderColor={deactivatedAccordionBorderColor}
+                  faq={elm}
+                  isLoadMore={isLoadMore}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="h-fit flex flex-wrap gap-y-6 w-full lg:w-1/2">
-          {sortedFAQs.rightSide.map((elm) => (
-            <div className="w-full" key={`right-${sortedFAQs.rightSide.indexOf(elm)}`}>
-              <CollapsibleComponent faq={elm} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </article>
+        <Button
+          className="block lg:hidden mt-2 h-auto py-2.5 px-6 text-lg font-normal"
+          style={{
+            backgroundColor: loadMoreBtnBgColor,
+            color: loadMoreBtnTextColor
+          }}
+          onClick={() => setIsLoadMore(!isLoadMore)}
+          variant="default"
+        >
+          {isLoadMore ? loadMoreBtnText[1] : loadMoreBtnText[0]}
+        </Button>
+      </article>
+    </section>
   );
 };
 

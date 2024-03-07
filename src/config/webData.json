@@ -60,18 +60,46 @@
     "footer": {
       "textColor": "#ffffff",
       "bgColor": "#000000",
-      "menus": [
+      "socialMedia": [
         {
-          "id": "footer-terms-of-service",
-          "name": "Terms of Service",
-          "slug": "/docs/terms-of-service"
+          "id": "facebook",
+          "iconSrc": "/assets/icons/social/facebook.svg",
+          "redirect": "/#home"
         },
+        {
+          "id": "twitter",
+          "iconSrc": "/assets/icons/social/twitter.svg",
+          "redirect": "/#home"
+        },
+        {
+          "id": "instagram",
+          "iconSrc": "/assets/icons/social/instagram.svg",
+          "redirect": "/#home"
+        },
+        {
+          "id": "pinterest",
+          "iconSrc": "/assets/icons/social/pinterest.svg",
+          "redirect": "/#home"
+        }
+      ],
+      "menus": [
         {
           "id": "footer-privacy-policy",
           "name": "Privacy Policy",
-          "slug": "/docs/privacy-policy"
+          "slug": "/#home"
+        },
+        {
+          "id": "footer-terms-and-conditions",
+          "name": "Terms & Conditions",
+          "slug": "/#home"
         }
-      ]
+      ],
+      "powerBy": {
+        "companyName": "Baruzotech",
+        "logo": "/assets/icons/baruzotechLogo.svg",
+        "redirect": "/#home"
+      },
+      "copyRightText": "All rights reserved"
     },
     "sectionsController": [
       {
@@ -93,11 +121,19 @@
             "src": "/assets/icons/securityPayment.svg"
           },
           {
+            "id": "mondayPartnerCertified",
+            "src": "/assets/icons/mondayPartnerCertifiedLogo.svg"
+          },
+          {
             "id": "high-security-protection",
             "src": "/assets/icons/highSecurityProtection.svg"
           }
         ],
         "clients": [
+          {
+            "id": "airbus-logo",
+            "src": "/assets/icons/airbus.svg"
+          },
           {
             "id": "etsy-logo",
             "src": "/assets/icons/etsy.svg"
@@ -121,8 +157,22 @@
           {
             "id": "stonyBrookUniversity-logo",
             "src": "/assets/icons/stonyBrookUniversity.svg"
+          },
+          {
+            "id": "portlandCommunityCollege-logo",
+            "src": "/assets/icons/portlandCommunityCollege.svg"
+          },
+          {
+            "id": "warnerMusic-logo",
+            "src": "/assets/icons/warnerMusic.svg"
+          },
+          {
+            "id": "verizonConnect-logo",
+            "src": "/assets/icons/verizonConnect.svg"
           }
         ],
+        "marqueeSpeed": 35,
+        "isMarqueePauseOnHover": true,
         "bgGradient": ["#242424", "#000000"],
         "textColor": "#ffffff",
         "subTextColor": "#D2D2D5"
@@ -280,8 +330,74 @@
         "cardBorderColor": "#EAEAEA"
       },
       {
-        "id": "security-keys",
+        "id": "faqs",
         "order": 5,
+        "type": "faqs",
+        "headingText": "Frequently Ask Questions",
+        "subText": [
+          "DriveSync uses APIs to connect Monday.com and Google Drive, allowing for seamless",
+          "communication between the two platforms."
+        ],
+        "FAQs": [
+          {
+            "number": 1,
+            "question": "How does DriveSync benefit my workflow?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 2,
+            "question": "What are the key features of DriveSync?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 3,
+            "question": "How does DriveSync simplify file management?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 4,
+            "question": "Is DriveSync easy to set up and use?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 5,
+            "question": "Can I customize how DriveSync organizes my files?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 6,
+            "question": "Does DriveSync require any technical knowledge ?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 7,
+            "question": "Is my data secure with DriveSync?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 8,
+            "question": "Can I try DriveSync before committing to it?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          },
+          {
+            "number": 9,
+            "question": "How does DriveSync integrate with Monday.com ?",
+            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
+          }
+        ],
+        "loadMoreBtnText": ["Load More", "See Less"],
+        "loadMoreBtnBgColor": "#000000",
+        "loadMoreBtnTextColor": "#ffffff",
+        "bgColor": "#ffffff",
+        "textColor": "#000000",
+        "subTextColor": "#4A4C56",
+        "accordionBgColor": "#F1F1F1",
+        "activatedAccordionBorderColor": "#A5A5AB",
+        "deactivatedAccordionBorderColor": "#E9E9EA"
+      },
+      {
+        "id": "security-keys",
+        "order": 6,
         "type": "cards",
         "cardsType": "withoutBg",
         "headingText": "Our Security Key",
@@ -321,7 +437,7 @@
       },
       {
         "id": "partners",
-        "order": 6,
+        "order": 7,
         "type": "partners",
         "headingText": "Our Partner",
         "subText": "",
@@ -337,102 +453,6 @@
         ],
         "bgColor": "#111111",
         "textColor": "#ffffff"
-      },
-      {
-        "id": "testimonial",
-        "order": 6,
-        "type": "testimonial",
-        "miniHeadingText": "DON'T TRUST US. TRUST THEM.",
-        "headingText": "What people say.",
-        "subText": [],
-        "reviews": [
-          {
-            "name": "Testimonial 1",
-            "subText": "User from test",
-            "imgSource": "/assets/images/testimonials/dp.jpeg",
-            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendis velit ut voluptatum nisi id perferendis voluptas est beatae repellat in asperiores perferendis.",
-            "rating": 5
-          },
-          {
-            "name": "Testimonial 2",
-            "subText": "User from test",
-            "imgSource": "/assets/images/testimonials/dp.jpeg",
-            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendis voluptas est beatae repellat in asperiores perferendis.",
-            "rating": 4
-          },
-          {
-            "name": "Testimonial 3",
-            "subText": "User from test",
-            "imgSource": "/assets/images/testimonials/dp.jpeg",
-            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendis.",
-            "rating": 5
-          },
-          {
-            "name": "Testimonial 4",
-            "subText": "User from test",
-            "imgSource": "/assets/images/testimonials/dp.jpeg",
-            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferend voluptas est beatae repellat in asperiores perferendis.",
-            "rating": 3
-          },
-          {
-            "name": "Testimonial 5",
-            "subText": "User from test",
-            "imgSource": "/assets/images/testimonials/dp.jpeg",
-            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum aut voluptatem perferendis. Quo perferendi perferendis.",
-            "rating": 3
-          },
-          {
-            "name": "Testimonial 6",
-            "subText": "User from test",
-            "imgSource": "/assets/images/testimonials/dp.jpeg",
-            "review": "Lorem ipsum dolor sit amet. Ea quam sunt eos temporibus iste qui dolor aliquid sed quia voluptatum voluptas est beatae repellat in asperiores perferendis.",
-            "rating": 4
-          }
-        ]
-      },
-      {
-        "id": "form",
-        "order": 7,
-        "type": "form",
-        "headingText": "Interested in working with us?",
-        "subText": "Let's build, launch & grow",
-        "fields": [
-          {
-            "name": "firstName",
-            "labelText": "First Name",
-            "placeholder": "Enter First Name",
-            "type": "text",
-            "isFullWidth": false
-          },
-          {
-            "name": "lastName",
-            "labelText": "Last Name",
-            "placeholder": "Enter Last Name",
-            "type": "text",
-            "isFullWidth": false
-          },
-          {
-            "name": "contactNumber",
-            "labelText": "Contact Number",
-            "placeholder": "Enter Contact Number",
-            "type": "phoneNumber",
-            "isFullWidth": false
-          },
-          {
-            "name": "email",
-            "labelText": "Email Address",
-            "placeholder": "Enter Email Address",
-            "type": "email",
-            "isFullWidth": false
-          },
-          {
-            "name": "message",
-            "labelText": "How can we assist you?",
-            "placeholder": "Type...",
-            "type": "textarea",
-            "isFullWidth": true
-          }
-        ]
       }
     ],
     "themeColor": {

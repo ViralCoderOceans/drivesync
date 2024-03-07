@@ -4,8 +4,27 @@ import { cn } from "@/libs/utils"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import CustomIframe from "@/components/customIframe";
+import Marquee from "react-fast-marquee";
 
-const ShowcaseSection = ({ data: { order, logo, headingText, subText, bottomText, youtubeVideoLink, securityBadges, clients, bgGradient, textColor, subTextColor } }: { data: any }) => {
+const ShowcaseSection = ({
+  data: {
+    order,
+    logo,
+    headingText,
+    subText,
+    bottomText,
+    youtubeVideoLink,
+    securityBadges,
+    clients,
+    bgGradient,
+    textColor,
+    subTextColor,
+    marqueeSpeed,
+    isMarqueePauseOnHover
+  }
+}: {
+  data: any
+}) => {
   return (
     <>
       <section
@@ -76,19 +95,24 @@ const ShowcaseSection = ({ data: { order, logo, headingText, subText, bottomText
       <section className="bg-black border-t border-[#FFFFFF]/50">
         {
           clients.length > 0 &&
-          <div className="w-full p-6 md:py-8 lg:py-14 flex flex-wrap items-center gap-8 lg:gap-10 justify-center bg-[#FFFFFF]/10">
-            {
-              clients.map((client: any) => (
-                <div key={client.id}>
-                  <img
-                    height="45px"
-                    className="h-[26px] lg:h-[45px]"
-                    src={client.src}
-                  />
-                </div>
-              ))
-            }
-          </div>
+          <Marquee
+            speed={marqueeSpeed}
+            pauseOnHover={isMarqueePauseOnHover}
+          >
+            <div className="w-full p-6 md:py-8 lg:py-14 flex flex-wrap items-center gap-8 lg:gap-10 justify-center bg-[#FFFFFF]/10">
+              {
+                clients.map((client: any) => (
+                  <div key={client.id}>
+                    <img
+                      height="45px"
+                      className="h-[26px] lg:h-[45px]"
+                      src={client.src}
+                    />
+                  </div>
+                ))
+              }
+            </div>
+          </Marquee>
         }
       </section>
     </>

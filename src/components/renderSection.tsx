@@ -1,14 +1,10 @@
 import React from 'react'
 import ShowcaseSection from "@/components/sections/showcaseSection";
 import CardsSection from "@/components/sections/cardsSection";
-import { cn } from "@/libs/utils"
-import TestimonialSection from './sections/testimonialSection';
-import CaseStudiesSection from './sections/caseStudiesSection';
-import StatsSection from './sections/statsSection';
 import PartnersSection from './sections/partnersSection';
-import FormSection from './sections/formSection';
 import data from "../config/webData.json"
 import CostSavingCalculator from './sections/costSavingCalculator';
+import FAQsSection from './sections/faqsSection';
 
 const RenderSection = () => {
   // if (error !== null) return (
@@ -41,6 +37,9 @@ const RenderSection = () => {
             }
             {
               elm.type === "partners" && <PartnersSection data={elm} />
+            }
+            {
+              elm.type === "faqs" && <FAQsSection data={elm} />
             }
           </div>
         ))
