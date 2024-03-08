@@ -4,16 +4,16 @@ const disallow = []
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 const finalUrl = siteUrl.replace(/\/$/, "") // Remove trailing slash
 
-// const additionalSitemaps = []
+const additionalSitemaps = ["/blogs/sitemap.xml", "/docs/sitemap.xml"]
 
 module.exports = {
   siteUrl: finalUrl,
   generateRobotsTxt: true, // (optional)
   exclude: [...disallow, ...additionalSitemaps], // <= exclude here
   robotsTxtOptions: {
-    // additionalSitemaps: additionalSitemaps.map((sitemap) => {
-    //   return `${finalUrl}${sitemap}`
-    // }),
+    additionalSitemaps: additionalSitemaps.map((sitemap) => {
+      return `${finalUrl}${sitemap}`
+    }),
     policies: [
       {
         userAgent: "*",

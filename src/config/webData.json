@@ -41,12 +41,12 @@
         {
           "id": "footer-privacy-policy",
           "name": "Privacy Policy",
-          "slug": "/#home"
+          "slug": "/docs/privacy-policy"
         },
         {
           "id": "footer-terms-and-conditions",
           "name": "Terms & Conditions",
-          "slug": "/#home"
+          "slug": "/docs/terms-and-services"
         }
       ],
       "button": {
@@ -97,12 +97,12 @@
         {
           "id": "footer-privacy-policy",
           "name": "Privacy Policy",
-          "slug": "/#home"
+          "slug": "/docs/privacy-policy"
         },
         {
           "id": "footer-terms-and-conditions",
           "name": "Terms & Conditions",
-          "slug": "/#home"
+          "slug": "/docs/terms-and-services"
         }
       ],
       "powerBy": {

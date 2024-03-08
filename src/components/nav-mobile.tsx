@@ -56,7 +56,6 @@ export default function MobileNav() {
                 <MenuItem>
                   <Link
                     href={slug}
-                    target="_blank"
                     onClick={() => toggleOpen()}
                     className="flex w-full font-semibold capitalize text-white"
                   >

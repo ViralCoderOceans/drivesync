@@ -41,7 +41,6 @@ export default function Nav() {
                       <Link
                         key={id}
                         href={slug}
-                        target="_blank"
                         className="z-10 rounded-full px-4 py-1.5 text-sm font-medium capitalize text-white transition-colors ease-out hover:text-gray-200"
                       >
                         {name}

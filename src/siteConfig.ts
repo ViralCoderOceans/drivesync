@@ -1,5 +1,10 @@
 "server-only";
 
+interface ITwitter {
+  username: string
+  url: string
+}
+
 interface ISiteConfig {
   domain: string;
   shortName: string;
@@ -20,6 +25,15 @@ interface ISiteConfig {
     name: string;
     url: string;
     logo: string;
+  };
+  meta: {
+    title: string;
+    description: string;
+  };
+  creator: {
+    name: string;
+    url: string;
+    twitter: ITwitter;
   };
   seo: {
     title: string;
@@ -66,6 +80,20 @@ const SiteConfig: ISiteConfig = {
     name: "DriveSync",
     url: "url",
     logo: "/assets/images/driveSync.svg",
+  },
+  meta: {
+    // seo title length between 50 and 60
+    title: "Story Generator",
+    // seo description length between 50 and 160
+    description: "Transform text into captivating videos. Unleash your storytelling skills with Story Generator. Create visually stunning narratives effortlessly.",
+  },
+  creator: {
+    name: "JagodanaStudio",
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? "",
+    twitter: {
+      username: "@JagodanaStudio",
+      url: "https://twitter.com/JagodanaStudio",
+    },
   },
   seo: {
     title: "DriveSync",

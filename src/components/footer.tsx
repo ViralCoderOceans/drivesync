@@ -69,7 +69,7 @@ export default function Footer() {
             <div className="flex flex-wrap justify-end items-center gap-3 lg:gap-6">
               {
                 data.landingPageData.footer.menus.map((menu) => (
-                  <Link key={menu.id} href={menu.slug} target="_blank" className="text-[10px] lg:text-base font-normal">
+                  <Link key={menu.id} href={menu.slug} className="text-[10px] lg:text-base font-normal">
                     {menu.name}
                   </Link>
                 ))
