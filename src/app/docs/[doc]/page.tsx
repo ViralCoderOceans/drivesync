@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
+import '@/styles/mdx.css'
 import { allDocs } from '@/../.contentlayer/generated';
 import { format, parseISO } from 'date-fns'
 import BackToHomeButton from '@/components/BackToHomeButton';
@@ -39,7 +40,7 @@ const DocsPage = () => {
           crrDoc?.title?.length > 0 &&
           <h1 className="mb-8 text-4xl font-bold">{crrDoc?.title}</h1>
         }
-        <div className="[&>*]:mb-3 [&>*:last-child]:mb-0 mb-6 [&>hr]:my-6 [&>hr]:bg-zinc-400 [&>hr]:h-[1px] [&>hr]:border-0" dangerouslySetInnerHTML={{ __html: crrDoc?.body?.html }} />
+        <div className="mdx-editor-container" dangerouslySetInnerHTML={{ __html: crrDoc?.body?.html }} />
         {
           crrDoc?.date?.length > 0 &&
           <time dateTime={crrDoc?.date}>
