@@ -130,69 +130,69 @@
         "securityBadges": [
           {
             "id": "security-payment",
-            "src": "/assets/icons/securityPayment.svg",
+            "src": "/assets/images/secure-payment.png",
             "imgAlt": "security-payment"
           },
           {
             "id": "mondayPartnerCertified",
-            "src": "/assets/icons/mondayPartnerCertifiedLogo.svg",
+            "src": "/assets/images/monday-com-partner-certified.png",
             "imgAlt": "security-payment"
           },
           {
             "id": "high-security-protection",
-            "src": "/assets/icons/highSecurityProtection.svg",
+            "src": "/assets/images/high-security-protection.png",
             "imgAlt": "security-payment"
           }
         ],
         "clients": [
           {
             "id": "airbus-logo",
-            "src": "/assets/icons/airbus.svg",
+            "src": "/assets/images/airbus.png",
             "imgAlt": "logo"
           },
           {
             "id": "etsy-logo",
-            "src": "/assets/icons/etsy.svg",
+            "src": "/assets/images/etsy.png",
             "imgAlt": "logo"
           },
           {
             "id": "newYorkTimes-logo",
-            "src": "/assets/icons/newYorkTimes.svg",
+            "src": "/assets/images/newYorkTimes.png",
             "imgAlt": "logo"
           },
           {
             "id": "logitech-logo",
-            "src": "/assets/icons/logitech.svg",
+            "src": "/assets/images/logitech.png",
             "imgAlt": "logo"
           },
           {
             "id": "forbes-logo",
-            "src": "/assets/icons/forbes.svg",
+            "src": "/assets/images/forbes.png",
             "imgAlt": "logo"
           },
           {
             "id": "tencent-logo",
-            "src": "/assets/icons/tencent.svg",
+            "src": "/assets/images/tencent.png",
             "imgAlt": "logo"
           },
           {
             "id": "stonyBrookUniversity-logo",
-            "src": "/assets/icons/stonyBrookUniversity.svg",
+            "src": "/assets/images/stonyBrookUni.png",
             "imgAlt": "logo"
           },
           {
             "id": "portlandCommunityCollege-logo",
-            "src": "/assets/icons/portlandCommunityCollege.svg",
+            "src": "/assets/images/portlandCommunityCollege.png",
             "imgAlt": "logo"
           },
           {
             "id": "warnerMusic-logo",
-            "src": "/assets/icons/warnerMusic.svg",
+            "src": "/assets/images/warnerMusic.png",
             "imgAlt": "logo"
           },
           {
             "id": "verizonConnect-logo",
-            "src": "/assets/icons/verizonConnect.svg",
+            "src": "/assets/images/verizonConnect.png",
             "imgAlt": "logo"
           }
         ],
