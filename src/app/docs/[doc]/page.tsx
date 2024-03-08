@@ -38,7 +38,7 @@ const DocsPage = () => {
       <div className="w-full md:max-w-3xl relative mx-auto p-0 md:p-10 rounded-xl">
         {
           crrDoc?.title?.length > 0 &&
-          <h1 className="mb-8 text-4xl font-bold">{crrDoc?.title}</h1>
+          <h1 className="mb-8 text-4xl font-bold text-black">{crrDoc?.title}</h1>
         }
         <div className="mdx-editor-container" dangerouslySetInnerHTML={{ __html: crrDoc?.body?.html }} />
         {
