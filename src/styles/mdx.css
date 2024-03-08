@@ -1,4 +1,8 @@
 /*add default styles  */
+.mdx-editor-container {
+  color: #000000;
+}
+
 .mdx-editor-container ul {
   list-style-type: disc;
   margin: 0;
