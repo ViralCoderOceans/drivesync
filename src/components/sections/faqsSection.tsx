@@ -77,7 +77,7 @@ const FAQsSection = ({
             </p>
           </>
         }
-        <div className="flex w-full mt-6 md:mt-10 lg:mt-[60px] flex-col lg:flex-row gap-0 lg:gap-10">
+        <div className="flex w-full mt-6 md:mt-10 lg:mt-[60px] flex-col lg:flex-row gap-0 lg:gap-4">
           <div className="h-fit flex flex-wrap w-full lg:w-1/2">
             {sortedFAQs.leftSide.map((elm) => (
               <div className="w-full" key={`left-${sortedFAQs.leftSide.indexOf(elm)}`}>

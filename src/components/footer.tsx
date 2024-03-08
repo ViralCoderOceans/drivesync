@@ -13,7 +13,7 @@ export default function Footer() {
         color: data.landingPageData.footer.textColor
       }}
     >
-      <div className="container px-4 max-w-[1320px] pt-[60px] pb-[30px] lg:pb-[60px]">
+      <div className="container px-4 pb-4 lg:pb-9 max-w-[1320px] pt-[60px]">
         <div className="flex justify-between items-center gap-8">
           <div className="space-y-[12px] md:space-y-[20px] lg:space-y-[30px]">
             <Link href="/" className="flex gap-x-2 items-center">
@@ -26,7 +26,7 @@ export default function Footer() {
               />
               <h2 className="text-base font-semibold md:text-2xl md:font-bold">{data?.shortName}</h2>
             </Link>
-            <div className="flex items-center gap-3 lg:gap-4">
+            {/* <div className="flex items-center gap-3 lg:gap-4">
               {
                 data.landingPageData.footer.socialMedia.map((social) => (
                   <a
@@ -47,7 +47,7 @@ export default function Footer() {
                   </a>
                 ))
               }
-            </div>
+            </div> */}
           </div>
           <div className="flex justify-end">
             <div className="space-y-[12px] md:space-y-[20px] lg:space-y-[30px]">
@@ -63,10 +63,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-6 lg:mt-9 border-t border-[#E9E9EA]/50 pt-6 lg:pt-9 flex justify-between items-center gap-2">
-          <p className={`text-[10px] lg:text-base font-normal ${!(data.landingPageData.footer.menus.length > 0) && "w-full text-center"}`}>
-            © {new Date().getFullYear()} {data?.organization?.name}. {data.landingPageData.footer.copyRightText}
-          </p>
+        <div className="mt-6 lg:mt-9 pt-6 lg:pt-9 flex justify-center items-center gap-2">
           {
             data.landingPageData.footer.menus.length > 0 &&
             <div className="flex flex-wrap justify-end items-center gap-3 lg:gap-6">
@@ -79,6 +76,11 @@ export default function Footer() {
               }
             </div>
           }
+        </div>
+        <div className="mt-6 lg:mt-9 border-t-[0.5px] border-[#E9E9EA]/50 pt-4 lg:pt-9 flex justify-center items-center gap-2">
+          <p className={`text-[10px] lg:text-base text-gray-300 font-thin ${!(data.landingPageData.footer.menus.length > 0) && "w-full text-center"}`}>
+            © {new Date().getFullYear()} {data?.organization?.name}. {data.landingPageData.footer.copyRightText}
+          </p>
         </div>
       </div>
     </footer>

@@ -13,7 +13,7 @@ const FAQsCollapsibleComponent = ({ faq, isLoadMore, textColor, accordionBgColor
   const [open, setOpen] = useState(false)
   return (
     <Collapsible
-      className={`w-full rounded-[8px] lg:rounded-[12px] p-3 lg:p-4 border-[0.5px] mb-4 ${!isLoadMore ? faq.number <= 5 ? "block" : "hidden" : "block"} lg:block`}
+      className={`w-full rounded-[8px] lg:rounded-[12px] p-3 lg:p-4 border-[0.5px] mb-3 lg:mb-4 ${!isLoadMore ? faq.number <= 6 ? "block" : "hidden" : "block"} lg:block`}
       open={open}
       onOpenChange={setOpen}
       style={{ backgroundColor: accordionBgColor, borderColor: open ? activatedAccordionBorderColor : deactivatedAccordionBorderColor }}
@@ -28,8 +28,14 @@ const FAQsCollapsibleComponent = ({ faq, isLoadMore, textColor, accordionBgColor
           </h3>
           <div className={`h-fit rounded-full p-[3px] lg:p-1 ${open ? "bg-[#D2D2D5]" : "bg-none"} border border-[#D2D2D5] self-center`}>
             {open
-              ? <ChevronUp className="h-[10px] md:h-[15px] lg:h-[20px] w-[10px] md:w-[15px] lg:w-[20px]" />
-              : <ChevronDown className="h-[10px] md:h-[15px] lg:h-[20px] w-[10px] md:w-[15px] lg:w-[20px]" />
+              ? <ChevronUp
+                className="h-[10px] md:h-[15px] lg:h-[20px] w-[10px] md:w-[15px] lg:w-[20px]"
+                style={{ color: textColor }}
+              />
+              : <ChevronDown
+                className="h-[10px] md:h-[15px] lg:h-[20px] w-[10px] md:w-[15px] lg:w-[20px]"
+                style={{ color: textColor }}
+              />
             }
           </div>
         </div>

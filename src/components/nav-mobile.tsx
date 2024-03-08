@@ -71,6 +71,7 @@ export default function MobileNav() {
               <MenuItem>
                 <Link
                   href={data?.landingPageData?.navbar?.button?.redirect}
+                  onClick={() => toggleOpen()}
                   target="_blank"
                   className="w-full"
                 >

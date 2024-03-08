@@ -1,6 +1,7 @@
 import React from "react";
 import BreakLine from "@/components/breakLine";
 import { cn } from "@/libs/utils";
+import Link from "next/link";
 
 const PartnersSection = ({ data: { order, headingText, subText, partners, bgColor, textColor } }: { data: any }) => {
   return (
@@ -43,11 +44,16 @@ const PartnersSection = ({ data: { order, headingText, subText, partners, bgColo
                   <div key={`partners-${elm.id}`} className="flex justify-center col-span-4 md:col-span-2">
                     {
                       elm.imgSrc.length > 0
-                        ? <img
-                          className="object-cover h-[44px] md:h-[75px]"
-                          src={elm.imgSrc}
-                          alt={elm.imgAlt}
-                        />
+                        ? <Link
+                          href={elm.redirect}
+                          target="_blank"
+                        >
+                          <img
+                            className="object-cover h-[44px] md:h-[75px]"
+                            src={elm.imgSrc}
+                            alt={elm.imgAlt}
+                          />
+                        </Link>
                         : <h3 className="text-3xl font-bold text-[#0e7dc2]">COMPANY-LOGO</h3>
                     }
 

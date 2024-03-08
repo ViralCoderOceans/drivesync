@@ -53,14 +53,14 @@
         "textColor": "#000000",
         "bgColor": "#ffffff",
         "text": "Contact Us",
-        "redirect": "/#home"
+        "redirect": "https://forms.monday.com/forms/649b680c480caa7fefc32eae1548d5c9?r=apse2"
       },
       "partnersLogo": [
         {
           "id": "google-cloud-logo",
           "alt": "google-cloud-logo",
           "logoSrc": "/assets/icons/googleCloudLogo.svg",
-          "redirect": "/#home"
+          "redirect": "https://cloud.google.com/find-a-partner/partner/baruzotech-private-limited"
         }
       ]
     },
@@ -121,7 +121,7 @@
           "bgColor": "#ffffff",
           "src": "/assets/icons/monday_com.svg",
           "imgAlt": "DriveSync",
-          "redirect": "/#home"
+          "redirect": "https://monday.com/marketplace/10000273"
         },
         "headingText": ["DriveSync - monday.com google", "drive integration"],
         "subText": "DriveSync seamlessly integrates monday.com and Google Drive, creating folders for new monday.com items and automatically copying files to the corresponding folders. This centralizes file management, streamlining workflow and boosting productivity, allowing users to focus on business growth and achieving exceptional results.",
@@ -374,51 +374,38 @@
           "communication between the two platforms."
         ],
         "FAQs": [
-          {
-            "number": 1,
-            "question": "How does DriveSync benefit my workflow?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 2,
-            "question": "What are the key features of DriveSync?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 3,
-            "question": "How does DriveSync simplify file management?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 4,
-            "question": "Is DriveSync easy to set up and use?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 5,
-            "question": "Can I customize how DriveSync organizes my files?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 6,
-            "question": "Does DriveSync require any technical knowledge ?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 7,
-            "question": "Is my data secure with DriveSync?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 8,
-            "question": "Can I try DriveSync before committing to it?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          },
-          {
-            "number": 9,
-            "question": "How does DriveSync integrate with monday.com ?",
-            "answer": "DriveSync saves you time and effort by eliminating manual folder creation. It ensures that your files are organized within the relevant projects or tasks in monday.com, streamlining your file management process."
-          }
+            {
+              "number": 1,
+              "question": "What is DriveSync?",
+              "answer": "DriveSync is an integration tool that automatically creates Google Drive folders for new items in monday.com and synchronizes files between from monday.com to Google Drive in real time, streamlining your project management and file storage processes."
+            },
+            {
+              "number": 2,
+              "question": "How does DriveSync enhance project management?",
+              "answer": "By automating folder creation and file synchronization, DriveSync saves time, reduces manual errors, and ensures that your project files are always organized and up-to-date across both monday.com and Google Drive."
+
+            },
+            {
+              "number": 3,
+              "question": "Is DriveSync secure?",
+              "answer": "Yes, DriveSync employs enterprise-level security measures to protect your data during synchronization. It adheres to strict data protection and privacy standards, ensuring your information is safe."
+
+            },
+            {
+              "number": 4,
+              "question": "How do I set up DriveSync?",
+              "answer": "Setting up DriveSync is simple. After installing the integration, you'll be guided through a straightforward setup process where you can authorize your Google Drive and configure your synchronization preferences."
+            },
+            {
+              "number": 5,
+              "question": "Does DriveSync support shared Google Drive folders?",
+              "answer": "Yes, DriveSync supports synchronization with shared Google Drive folders, making it ideal for team collaboration. You can specify which shared folders to sync with, ensuring that your team has access to the right files at the right time."
+            },
+            {
+              "number": 6,
+              "question": "Is DriveSync suitable for businesses of all sizes?",
+              "answer": "Absolutely. DriveSync is designed to cater to the needs of freelancers, small businesses, and large enterprises alike, offering scalable solutions to improve project management and file synchronization processes."
+            }
         ],
         "loadMoreBtnText": ["Load More", "See Less"],
         "loadMoreBtnBgColor": "#000000",
@@ -452,7 +439,7 @@
           {
             "number": 2,
             "heading": "Access Control",
-            "subText": "DriveSync enforces strict access controls, empowering users to manage permissions for file and folder access.",
+            "subText": "We use secure OAuth authentication mechanisms to ensure that only authorized users can access your DriveSync integration settings and data.",
             "imgSource": "/assets/icons/accessControlIcon.svg",
             "imgAlt": "Access Control",
             "redirect": "/#home"
@@ -483,12 +470,14 @@
           {
             "id": "partner-googleCloudLogo",
             "imgSrc": "/assets/icons/googleCloudLogo.svg",
-            "imgAlt": "googleCloudLogo"
+            "imgAlt": "googleCloudLogo",
+            "redirect": "https://cloud.google.com/find-a-partner/partner/baruzotech-private-limited"
           },
           {
             "id": "partner-monday-com",
             "imgSrc": "/assets/icons/monday_com_whiteTextIcon.svg",
-            "imgAlt": "monday-com"
+            "imgAlt": "monday-com",
+            "redirect": "https://monday.com"
           }
         ],
         "bgColor": "#111111",
