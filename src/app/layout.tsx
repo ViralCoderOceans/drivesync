@@ -65,7 +65,7 @@ export default async function RootLayout({
 }) {
   return (
     <>
-      <html lang="en" className="bg-black">
+      <html lang="en">
         <head>
           <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
